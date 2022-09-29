@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
+      "src": "./index.js",
       "use": "@vercel/node"
     },
     {
@@ -17,11 +17,11 @@
     },
     {
       "src": "/",
-      "dest": "public/index.html"
+      "dest": "index.js"
     },
     {
       "src": "/(.+)",
-      "dest": "public/$1"
+      "dest": "index.js"
     }
   ]
 }
