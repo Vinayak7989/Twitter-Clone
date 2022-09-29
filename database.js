@@ -18,7 +18,7 @@ class Database {
   connect() {
     mongoose
       .connect(
-        "mongodb://admin-vinayak:test123@cluster0-shard-00-00.xt6e8.mongodb.net:27017,cluster0-shard-00-01.xt6e8.mongodb.net:27017,cluster0-shard-00-02.xt6e8.mongodb.net:27017/ecommerce?ssl=true&replicaSet=atlas-tpmcmv-shard-0&authSource=admin&retryWrites=true&w=majority"
+        "mongodb+srv://admin-vinayak:test123@cluster0.xt6e8.mongodb.net/Twitter?retryWrites=true&w=majority"
       )
       .then(() => {
         console.log("database connection successful");
